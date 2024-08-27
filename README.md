@@ -1,5 +1,12 @@
 # Busca de usuário utilizando API do GitHub
 
+<div align='center'>
+
+![Quantidade de linguagens utilizadas](https://img.shields.io/badge/Linguagens-3-darkblue?style=flat)
+![API utilizada](https://img.shields.io/badge/API-GitHub-purple?style=flat)
+
+</div>
+
 Projeto que retorna informações básicas de usuários cadastrados na plataforma do [GitHub](https://github.com/), bem como repositórios.
 
 ## Tabela de conteúdos
@@ -59,6 +66,7 @@ Por último, caso o usuário inserido no campo possua um cadastro na plataforma 
 
 - Marcações semânticas HTML5 para estruturação
 - Propriedades CSS para estilização
+- JavaScript
 - Flexbox
 - Responsividade
 - Objetos e serviços
