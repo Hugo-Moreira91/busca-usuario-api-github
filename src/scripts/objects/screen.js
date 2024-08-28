@@ -5,7 +5,10 @@ const screen = {
                                             <img src="${user.avatarUrl}" alt="Foto do perfil do usuário" />
                                             <div class="data">
                                                 <h1>${user.name ?? 'Não possui nome cadastrado 😓'}</h1>
-                                                <p>${user.bio ?? 'Não possui nome cadastrado 😓'}</p>
+                                                <h2>(${user.userName})</h2>
+                                                <p>${user.bio ?? 'Não possui bio cadastrada 😓'}</p>
+                                                <p><i class="fa-solid fa-user-group" style="color: #24292e;"></i> Seguidores: ${user.followers}</p>
+                                                <p><i class="fa-solid fa-user-check" style="color: #24292e;"></i> Seguindo: ${user.following}</p>
                                             </div>
                                         </div>`
         
