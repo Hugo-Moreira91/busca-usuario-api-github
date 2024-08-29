@@ -118,7 +118,16 @@ main {
 .container .profile-data .info h2{
   font-size: 16px;
   margin-bottom: 20px;
+  color: #24292E;
+}
+
+.container .profile-data .info h2 a{
   font-weight: 600;
+  transition: color .3s ease-in-out;
+}
+
+.container .profile-data .info h2 a:hover{
+  color: hotpink;
 }
 
 .container .profile-data .info p{
@@ -126,6 +135,10 @@ main {
   font-weight: 400;
   line-height: 23px;
   margin-bottom: 10px;
+}
+
+.container .profile-data .info p i{
+  color: #24292e;
 }
 
 /* REPOSITORIES */
@@ -155,8 +168,54 @@ main {
   color: #fff
 }
 
+.repository-info{
+  margin-top: 8px;
+}
+
+.repository-info ul{
+  display: flex;
+  gap: 5px;
+}
+
+.repository-info ul li{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  color: #fff;
+  background-color: #6129D9;
+  border-radius: 7px;
+}
+
+.repository-info ul li i{
+  color: #ffc700;
+}
+
 .container .profile-data.hide{
   display: none;
+}
+
+/* EVENTS */
+
+.container .profile-data .events h2{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .profile-data .events ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container .profile-data .events ul li a{
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .events ul li a:hover{
+  color: hotpink;
 }
 
 @media (max-width: 1280px) {
