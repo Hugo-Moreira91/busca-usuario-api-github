@@ -4,6 +4,7 @@
 
 ![Quantidade de linguagens utilizadas](https://img.shields.io/badge/Linguagens-3-darkblue?style=flat)
 ![API utilizada](https://img.shields.io/badge/API-GitHub-purple?style=flat)
+![Versão do projeto](https://img.shields.io/badge/Versão-1.3.0-darkgreen?style=flat)
 
 </div>
 
@@ -20,6 +21,11 @@ Projeto que retorna informações básicas de usuários cadastrados na plataform
     - [O que aprendi](#o-que-aprendi)
     - [Aprimoramento contínuo](#aprimoramento-contínuo)
     - [Links úteis](#links-úteis)
+- [Versões](#versões)
+    - 1.0.0
+    - 1.1.0
+    - 1.2.0
+    - 1.3.0
 - [Autor](#autor)
 - [Agradecimentos](#agradecimentos)
 
@@ -91,6 +97,42 @@ Destaco a separação de responsabilidades em arquivos e pastas, bem como a cria
 - [Método addEventListener()](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) - Auxiliou-me na exibição das informações buscadas, seja através do clique no botão ou pressionando a tecla Enter (sendo este último um conhecimento novo para mim)
 - [Objetos em JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) - Auxiliou-me na sintaxe de atributos e métodos dos objetos, além do seu uso para exibição das informações pertinentes para o projeto
 - [Documentação da API do GitHub - requisições para usuários](https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28) - Importante documentação para auxiliar no desenvolvimento do projeto, com informações referentes aos endpoints utilizados no projeto: um para extrair as informações básicas do usuário pesquisado (foto, nome e bio) e outro para buscar seus repositórios
+
+## Versões
+
+### 1.0.0
+
+Versão inicial do projeto. Ver seção [Funcionamento](#funcionamento) para mais detalhes.
+
+### 1.1.0
+
+Nova funcionalidade! ✨
+
+Agora, ao pesquisar um usuário cadastrado no GitHub, é possível visualizar quantas pessoas ele segue, e por quantas é seguido. Estas informações encontram-se abaixo da bio.
+
+![Imagem exemplo do número de pessoas seguindo e que seguem o usuário pesquisado](/src/design/followers-following-example.png)
+
+### 1.2.0
+
+Nova funcionalidade! ✨
+
+Ao pesquisar um usuário cadastrado no GitHub é possível visualizar até dez eventos ocorridos em seus repositórios, sendo possível acessá-lo(s).
+
+Apenas dois tipos de eventos serão exibidos - [_PushEvent_](https://docs.github.com/en/rest/using-the-rest-api/github-event-types?apiVersion=2022-11-28#pushevent) e [_CreateEvent_](https://docs.github.com/en/rest/using-the-rest-api/github-event-types?apiVersion=2022-11-28#createevent). 
+
+Para um _PushEvent_ será exibido a mensagem de _commit_ realizada pelo usuário pesquisado.
+
+Para um _CreateEvent_ será exibida a mensagem "*sem mensagem de commit*"
+
+![Imagem exemplo dos últimos dez eventos ocorridos em repositórios de um usuário do GitHub](/src/design/events-example.png)
+
+### 1.3.0
+
+Nova funcionalidade! ✨
+
+Ao pesquisar um usuário cadastrado no Github, caso ele possua algum repositório, o mesmo trará informações adicionais, como número de forks, estrelas, visualizações e linguagem utilizada, nesta ordem.
+
+![Imagem exemplo das informações adicionais em cada repositório do usuário pesquisado](/src/design/repository-info-example.png)
 
 ## Autor
 
